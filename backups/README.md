@@ -25,7 +25,7 @@ gunzip redmine_db-*.dump.gz
 ```
 
 ```
-docker exec -i redmine-postgres-1 pg_restore -U postgres -d redmine < ./backups/redmine_db-2023-03-30.dump
+docker exec -i redmine-postgres-1 pg_restore -U postgres -d redmine < ./backups/redmine_db-*.dump
 ```
 
 3. Now you spin up the redmine container:
