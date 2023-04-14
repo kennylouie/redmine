@@ -32,3 +32,8 @@ docker exec -i redmine-postgres-1 pg_restore -U postgres -d redmine < ./backups/
 ```
 docker compose up redmine -d
 ```
+
+4. Back up files
+```
+cd .. && tar -zcvf files-$(date +%Y-%m-%d).tar.gz files
+```
