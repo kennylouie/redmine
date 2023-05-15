@@ -20,6 +20,7 @@ services:
       - redmine
     volumes:
       - ./files:/usr/src/redmine/files
+      - ./plugins:/usr/src/redmine/plugins
     ports:
       - 3000:3000
     environment:
